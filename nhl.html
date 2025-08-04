@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL Playoff Bracket</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <h1>NHL Playoffs Custom Bracket</h1>
+
+    <div id = "First-round">
+        <h2>First round</h2>
+        <div class = "atlantic">
+            <!-- 2nd atlantic v 3rd atlantic -->
+            <select class = "team" id = "2-a">
+                <option value = "2nd Atlantic Division" selected disabled>2nd Atlantic Division</option>
+            </select>
+            <select class = "team" id = "3-a">
+                <option value = "3rd Atlantic Division" selected disabled>3rd Atlantic Division</option>
+            </select>
+            <select class = "winner" id = "2-3-atlantic">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "metro">
+            <!-- 2nd metro v 3rd metro -->
+            <select class = "team" id = "2-m">
+                <option value = "2nd Metropolitan Division" selected disabled>2nd Metropolitan Division</option>
+            </select>
+            <select class = "team" id = "3-m">
+                <option value = "3rd Metropolitan Division" selected disabled>3rd Metropolitan Division</option>
+            </select>
+            <select class = "winner" id = "2-3-metro">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "central">
+            <!-- 2nd central v 3rd central -->
+            <select class = "team" id = "2-c">
+                <option value = "2nd Central Division" selected disabled>2nd Central Division</option>
+            </select>
+            <select class = "team" id = "3-c">
+                <option value = "3rd Central Division" selected disabled>3rd Central Division</option>
+            </select>
+            <select class = "winner" id = "2-3-central">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "pacific">
+            <!-- 2nd pacific v 3rd pacific -->
+            <select class = "team" id = "2-p">
+                <option value = "2nd Pacific Division" selected disabled>2nd Pacific Division</option>
+            </select>
+            <select class = "team" id = "3-p">
+                <option value = "3rd Pacific Division" selected disabled>3rd Pacific Division</option>
+            </select>
+            <select class = "winner" id = "2-3-pacific">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "atlantic">
+            <!-- 1st eastern v 2nd EWC -->
+            <select class = "team" id = "1-e">
+                <option value = "1st Eastern Conference" selected disabled>1st Eastern Conference</option>
+            </select>
+            <select class = "team" id = "wc2-e">
+                <option value = "Wild Card 2 (Eastern Conference)" selected disabled>Wild Card 2 (Eastern Conference)</option>
+            </select>
+            <select class = "winner" id = "1-WC-eastern">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "metro">
+            <!-- 2nd eastern v 1st EWC -->
+            <select class = "team" id = "2-e">
+                <option value = "2nd Eastern Conference" selected disabled>2nd Eastern Conference</option>
+            </select>
+            <select class = "team" id = "wc1-e">
+                <option value = "Wild Card 1 (Eastern Conference)" selected disabled>Wild Card 1 (Eastern Conference)</option>
+            </select>
+            <select class = "winner" id = "2-WC-eastern">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "central">
+            <!-- 1st western v 2nd WWC -->
+            <select class = "team" id = "1-w">
+                <option value = "1st Western Conference" selected disabled>1st Western Conference</option>
+            </select>
+            <select class = "team" id = "wc2-w">
+                <option value = "Wild Card 2 (Western Conference)" selected disabled>Wild Card 2 (Western Conference)</option>
+            </select>
+            <select class = "winner" id = "1-WC-western">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "pacific">
+            <!-- 2nd western v 1st WWC -->
+            <select class = "team" id = "2-w">
+                <option value = "2nd Western Conference" selected disabled>2nd Western Conference</option>
+            </select>
+            <select class = "team" id = "wc1-w">
+                <option value = "Wild Card 1 (Western Conference)" selected disabled>Wild Card 1 (Western Conference)</option>
+            </select>
+            <select class = "winner" id = "2-WC-western">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+    </div>
+
+    <div id = "Second-round">
+        <h2>Second round</h2>
+        <div class = "atlantic">
+            <!-- atlantic v atlantic -->
+            <p class = "game-label">Atlantic Division</p>
+            <select class = "winner" id = "atlantic">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "metro">
+            <!-- metro v metro -->
+            <p class = "game-label">Metropolitan Division</p>
+            <select class = "winner" id = "metro">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "central">
+            <!-- central v central -->
+            <p class = "game-label">Central Division</p>
+            <select class = "winner" id = "central">
+                <option value = "Winner" selected disabled>Winner</option> 
+            </select>
+        </div>
+        <div class = "pacific">
+        <!-- pacific v pacific -->
+        <p class = "game-label">Pacific Division</p>
+        <select class = "winner" id = "pacific">
+            <option value = "Winner" selected disabled>Winner</option> 
+         </select>
+        </div>
+    </div>
+
+    <div id = "Conference-final">
+        <h2>Conference finals</h2>
+        <div class = "game">
+        <!-- atlantic winner v metro winner -->
+        <p class = "game-label">Eastern Conference final</p>
+        <select class = "winner" id = "eastern">
+            <option value = "Winner" selected disabled>Winner</option> 
+         </select>
+        </div>
+        <div class = "game">
+        <!-- central winner v pacific winner -->
+        <p class = "game-label">Western Conference final</p>
+        <select class = "winner" id = "western">
+            <option value = "Winner" selected disabled>Winner</option> 
+         </select>
+        </div>
+    </div>
+
+    <div id = "Stanley-cup-final">
+        <h2>Stanley Cup final</h2>
+        <select class = "winner" id = "stanley">
+            <option value = "Winner" selected disabled>Winner</option> 
+         </select>
+    </div>
+
+    <div id = "info">
+        <h3>Playoff information</h3>
+        <ul>
+            <li>Each round is a collection of at most 7 games, played between the two teams indicated above or in the dropdown menu. The first team to win 4 games advances to the next round.</li>
+            <li>Home-ice advantage: 
+            <ul>
+                <li>Games 1, 2, 5 (if necessary), and 7 (if necessary) are played in the home arena of the team with the home-ice advantage. The remaining games are played at the opposing team's home arena.</li>
+                <li>For the first two rounds, home-ice advantage goes to the team with the higher placement in the regular season standings.</li>
+                <li>For the conference finals and Stanley Cup finals, home-ice advantage goes to the team with the better record in the regular season.</li>
+            </ul>
+            </li>
+            <li>Contrary to regular-season games, there are no shootouts in the playoffs. Instead, play continues in the form of overtime periods until a winning goal is scored.</li>
+            <li>All Wild Card teams are assigned to the division of their first-round matchup for the duration of the playoffs, regardless of which division they play in during the regular season.</li>
+        </ul>
+        <p>Source: <a href = "https://www.nhl.com/info/standings-info/playoff-format">nhl.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kate Bussey</p>
+    </footer>
+    
+    <script src = "nhl-script.js"></script>
+</body>
+</html>

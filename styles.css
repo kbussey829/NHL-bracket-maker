@@ -1,0 +1,111 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#First-round {
+    display: grid;
+    grid-template-rows: repeat(3, 75px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 5px;
+}
+
+div h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: center;
+}
+
+#Second-round {
+    display: grid;
+    grid-template-rows: repeat(2, 75px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 5px;
+}
+
+#Conference-final {
+    display: grid;
+    grid-template-rows: repeat(2, 75px);
+    grid-template-columns: repeat(2, 600px);
+    gap: 5px;
+}
+
+#Stanley-cup-final {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, 1200px);
+    gap: 5px;
+}
+
+.winner {
+    background-color: gold;
+}
+
+.atlantic {
+    border: 2px dashed blue;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.metro {
+    border: 2px dashed red;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.central {
+    border: 2px dashed green;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.pacific {
+    border: 2px dashed purple;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.game-label {
+    display: flex;
+    align-self: center;
+}
+
+.game {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 4px;
+}
+
+@media (width < 900px){
+    #First-round {
+        grid-template-rows: repeat(5, 75px);
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #Stanley-cup-final {
+        grid-template-columns: repeat(1, 600px);
+    }
+
+    #Conference-final {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
